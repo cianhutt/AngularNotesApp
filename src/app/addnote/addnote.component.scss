@@ -1,0 +1,59 @@
+#container{
+    max-width: 500px;
+    margin: auto;
+    form{
+        font-family: 'Montserrat';
+        font-size: 14px;
+        color: black;
+        width: 100%;
+      
+        
+
+        input, textarea{
+            width: 100%;  
+            background-color: #f2f2f2;
+           
+           border: 0px solid;
+           border-radius: 3px;
+        }
+
+        input{
+            height: 40px;
+        }
+        textarea{
+            height: 80px;
+        }
+        
+
+        #buttons{
+            margin-top: 20px;
+            float: right;
+            
+            button{
+                border-radius: 2px;
+                font-size: 14px;
+                
+            }
+            .cancelbtn{
+                background-color: rgb(216, 216, 216); /* Green */
+                border: none;
+                color: rgb(0, 0, 0);
+                padding: 10px 20px;
+                font-family: 'Montserrat';
+               
+                cursor: pointer;
+            }
+
+            .addbtn{
+                background-color: rgb(124, 117, 223); /* Green */
+                border: none;
+                margin-left: 10px;
+                color: white;
+                padding: 10px 20px;
+                font-family: 'Montserrat';
+              
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+#container{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    
+    border-radius:5px;
+    
+    box-shadow: 0px 2px 15px 2px rgba( #000000, 0.068);
+    margin-bottom: 20px;
+    
+
+    // &:hover{
+    //     cursor: pointer;
+    //     box-shadow: 0px 2px 0px 4px black;
+    // }
+
+    #titlep{
+        padding: 10px 20px;
+        font-family: 'Montserrat';
+        
+        .title{
+        font-size: 22px;
+        color: rgb(142, 103, 194);
+        }
+    }
+}
