@@ -1,9 +1,9 @@
 <div id="container">
     
-        <input type="text" placeholder="Search.." >
+        <input type="text" placeholder="Search.." (keyup)="filter($event.target.value)">
         <div id="noteslist">
-                <app-note *ngFor="let note of notes; index as i"
-                 routerLink="i"
+                <app-note *ngFor="let note of filteredNotes; index as i"
+                 [routerLink]="i"
                 [title]="note.title" 
                 [body]="note.body"></app-note>
         </div>

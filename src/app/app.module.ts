@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+// import { BrowserAnimationsModule } from '@angular/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -24,7 +25,8 @@ import { NotesService } from './shared/notes.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    // BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

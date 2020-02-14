@@ -8,7 +8,9 @@ import { AddnoteComponent } from './addnote/addnote.component';
 const routes: Routes = [
     {path: '', component: HomeComponent, children: [
       {path: '', component: NoteslistComponent},
+      {path: 'new', component: AddnoteComponent},
       {path: ':id', component: AddnoteComponent}
+
   ]}
 ];
 
