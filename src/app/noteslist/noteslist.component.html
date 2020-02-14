@@ -2,7 +2,10 @@
     
         <input type="text" placeholder="Search.." >
         <div id="noteslist">
-                <app-note *ngFor="let not of notes" title="note.title" body="note.body"></app-note>
+                <app-note *ngFor="let note of notes; index as i"
+                 routerLink="i"
+                [title]="note.title" 
+                [body]="note.body"></app-note>
         </div>
 
         <button routerLink="new">Add</button>

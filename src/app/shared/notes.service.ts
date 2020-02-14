@@ -22,13 +22,13 @@ export class NotesService {
   }
 
   add(note: Note){
-    let newLength = this.notes.push(note);
-    let index = newLength - 1;
+    const newLength = this.notes.push(note);
+    const index = newLength - 1;
     return index;
   }
 
   update(id: number, title: string, body: string) {
-    let note = this.notes[id];
+    const note = this.notes[id];
     note.title = title;
     note.body = body;
   }

@@ -1,17 +1,17 @@
 <div id="container">
-    <form #noteForm="ngForm">
+    <form #noteForm="ngForm" (ngSubmit)="onSubmit(noteForm)">
       
         <h2 class="title">Title</h2>
-        <input type="text">
+        <input type="text" name="title" [ngModel]="note.title">
         
         
         <h2 class="body">Body</h2>
-        <textarea class="textarea"></textarea>
+        <textarea class="textarea" name="body" [ngModel]="note.body"></textarea>
     
 
         <div id="buttons">
-            <button class="cancelbtn" >Cancel</button>
-            <button class="addbtn">Add</button>
+            <button class="cancelbtn" (click)="cancel()">Cancel</button>
+            <button class="addbtn" type="submit" [disabled]="!noteForm.valid">Add</button>
         </div>
     </form>
 </div>
